@@ -143,7 +143,7 @@ p {
   border: 4px solid #8c77bb;
 }
 
-/* IMAGEN */
+
 .card-img img {
   width: 100%;
   height: 100%;
@@ -151,12 +151,12 @@ p {
   border-radius: 50%;
 }
 
-/* ATRÁS */
+
 .card-img .back {
   transform: rotateY(180deg);
 }
 
-/* EFECTO */
+
 .card-img:hover .front {
   transform: rotateY(180deg);
 }
@@ -165,7 +165,7 @@ p {
   transform: rotateY(360deg);
 }
 
-/* NOMBRE */
+
 .card h3 {
   margin: 10px 0;
   color: white;
@@ -249,7 +249,6 @@ p {
   padding: 40px 0;
 }
 
-/* línea central */
 .contenedor-bitacora::after {
   content: '';
   position: absolute;
@@ -278,7 +277,6 @@ p {
   left: 50%;
 }
 
-/* circulito */
 .hito-numero {
   position: absolute;
   width: 40px;
@@ -296,7 +294,6 @@ p {
   box-shadow: 0 0 10px #c77dff;
 }
 
-/* posición del circulo */
 .hito-izq .hito-numero {
   right: -20px;
 }
@@ -305,7 +302,6 @@ p {
   left: -20px;
 }
 
-/* tarjeta */
 .hito-contenido {
   padding: 25px;
   background-color: rgba(16, 9, 43, 0.8);
@@ -314,19 +310,17 @@ p {
   backdrop-filter: blur(5px);
 }
 
-/* texto + imagen */
 .hito-texto {
   display: flex;
   gap: 25px;
   align-items: flex-start;
 }
 
-/* texto */
 .texto-contenido {
   flex: 1;
 }
 
-/* imagen */
+
 .hito-imagen {
   flex: 0 0 220px;
 }
@@ -337,7 +331,6 @@ p {
   opacity: 0.9;
 }
 
-/* títulos */
 .hito-texto h3 {
   color: #c77dff;
   font-family: 'Michroma', sans-serif;
@@ -345,7 +338,6 @@ p {
   font-size: 26px;
 }
 
-/* párrafos */
 .hito-texto p {
   line-height: 1.6;
   font-size: 18px;
@@ -417,7 +409,6 @@ p {
   letter-spacing: 1px;
 }
 
-/* REDES A LA DERECHA */
 .social-grid {
   display: flex;
   gap: 15px;

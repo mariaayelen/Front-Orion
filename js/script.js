@@ -1,7 +1,6 @@
-// Espera a que cargue todo el DOM
 document.addEventListener("DOMContentLoaded", () => {
 
-  // 🔹 SCROLLREVEAL (animaciones al hacer scroll)
+  // SCROLLREVEAL (animaciones al hacer scroll)
   if (typeof ScrollReveal !== 'undefined') {
     const sr = ScrollReveal();
     sr.reveal('.revelable', {
@@ -17,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
 
-  // 🔹 PARTÍCULAS (estrellas fondo)
+  //PARTÍCULAS (estrellas fondo)
   if (typeof tsParticles !== 'undefined') {
     tsParticles.load("tsparticles", {
       background: {
@@ -56,7 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
       interactivity: {
         events: {
           onHover: {
-            enable: false // 🔥 lo apagamos como querías (no reacciona al mouse)
+            enable: false 
           },
           onClick: {
             enable: false
@@ -68,7 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
 
-  // 🔹 EFECTO FOOTER (cuando llegás abajo)
+  // EFECTO FOOTER 
   const footer = document.querySelector('.main-footer');
 
   if (footer) {
