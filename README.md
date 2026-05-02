@@ -34,15 +34,22 @@ El sitio apuesta por una estética inspirada en el espacio, con colores oscuros,
 ## Estructura del proyecto
 
 ```
-TP1-Front/
+Front-Orion/
 ├── index.html              # Página principal
-├── bitacora.html           # Página de bitácora del proyecto
 ├── assets/
-│   └── img/                # Imágenes usadas en el sitio
+│   └── img/                # Imágenes y recursos visuales
 ├── css/
 │   └── style.css           # Estilos globales del sitio
 ├── js/
-│   └── script.js           # Comportamiento y animaciones
+│   └── script.js           # Comportamiento y animaciones globales
+├── pages/
+│   ├── bitacora/           # Sección de bitácora del proyecto
+│   │   ├── bitacora.html
+│   │   └── styles.css
+│   └── ivan/               # Ejemplo de página de integrante
+│       ├── page.html
+│       ├── styles.css
+│       └── gravity.js
 └── README.md               # Documentación del proyecto
 ```
 
@@ -54,11 +61,16 @@ TP1-Front/
 - Botón principal para comenzar el viaje.
 - Footer con branding y redes sociales.
 
-### `bitacora.html`
+### `pages/bitacora/bitacora.html`
 - Línea de tiempo con hitos del desarrollo.
 - Tarjetas de bitácora con texto e imagen.
 - Animaciones de entrada para cada tarjeta.
 - Fondo de partículas activo con `tsParticles`.
+
+### `pages/ivan/page.html`
+- Ejemplo de perfil individual personalizado.
+- Incluye secciones de música, películas y habilidades.
+- Implementa lógica propia de partículas y gravedad (`gravity.js`).
 
 ### `css/style.css`
 - Estilos generales para todo el sitio.
@@ -74,7 +86,8 @@ TP1-Front/
 ## Cómo ejecutar el proyecto
 
 1. Descarga o clona el repositorio a tu PC.
-2. Abre `index.html` o `bitacora.html` directamente en el navegador.
+2. Abre `index.html` directamente en el navegador.
+3. Navega hacia la bitácora o los perfiles desde los enlaces del menú.
 
 > El proyecto es estático; no necesita servidor. Sin embargo, si querés probarlo con un servidor local, podés usar `Live Server` en VS Code.
 
@@ -91,9 +104,9 @@ TP1-Front/
 
 ## Mejoras futuras sugeridas
 
-- Agregar página de `integrantes.html` con biografías individuales.
-- Incluir un menú móvil desplegable.
+- Completar las páginas individuales del resto de los integrantes.
 - Añadir más interactividad a las tarjetas tipo flip card.
+- Optimizar la carga de imágenes usando formatos modernos (WebP).
 - Crear una versión con dark mode automático.
 
 ## Licencia
