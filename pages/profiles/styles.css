@@ -522,7 +522,7 @@ body.rocket-active {
     }
 }
 
-/* --- Dispositivos móviles pequeños (400px) --- */
+/* --- Dispositivos móviles pequeños (400px). --- */
 @media screen and (max-width: 400px) {
     .profile-avatar-container {
         width: 130px;
