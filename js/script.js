@@ -145,7 +145,7 @@ document.addEventListener("DOMContentLoaded", () => {
         // Ocultar definitivamente después de volar
         setTimeout(() => {
           clearInterval(flyInterval);
-          cursor.style.transition = 'transform 0.2s ease, color 0.2s ease, text-shadow 0.2s ease'; /
+          cursor.style.transition = 'transform 0.2s ease, color 0.2s ease, text-shadow 0.2s ease';
           cursor.style.display = "none";
           isFlying = false;
           currentAngle = -45; 
