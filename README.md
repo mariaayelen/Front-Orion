@@ -1,10 +1,10 @@
 # Equipo Orión - Proyecto Web
 
-<img src="assets/img/logo.png" alt="Logo Equipo Orión" width="150" height="150">
-
 ## Descripción
 
 Página web de presentación y bitácora del Equipo Orión, desarrollada como trabajo práctico para la Tecnicatura en Desarrollo de Software.
+
+El equipo se llama “Orión” porque elegimos la temática del espacio para representar nuestra forma de trabajar. Pensamos que cada integrante es como una estrella: cada uno aporta su luz, sus ideas, sus experiencias y su manera de construir el proyecto. Cuando nos unimos, no somos partes separadas, sino que formamos una constelación, donde cada elemento tiene sentido dentro del conjunto y permite crear algo más grande.
 
 El sitio apuesta por una estética inspirada en el espacio, con colores oscuros, tipografías modernas y animaciones suaves. Incluye una sección de bienvenida, tarjetas de integrantes y una bitácora que documenta el proceso creativo y técnico.
 
@@ -14,6 +14,7 @@ El sitio apuesta por una estética inspirada en el espacio, con colores oscuros,
 - Documentar el proceso de creación con una bitácora visual.
 - Incluir animaciones y diseño responsivo.
 - Usar tecnologías web básicas para una página estática.
+- Compartir experiencias
 
 ## Integrantes del Equipo
 
@@ -181,7 +182,9 @@ https://fonts.google.com/specimen/Montserrat
   - Se implementó la librería tsParticles
   - Fondo animado con partículas
   - Refuerza la ambientación espacial
-     <img src="assets/img/particulas.png" width="250">
+   <div align="center">
+  <img src="assets/img/particulas.png" width="250">
+</div>
 - Efectos visuales
   - Flip cards en integrantes (CSS + interacción)
   - Botones con efecto neón
@@ -190,42 +193,47 @@ https://fonts.google.com/specimen/Montserrat
   - Se activa dinámicamente con JavaScript
   - Sigue el movimiento del mouse con animación fluida 
   - Genera partículas tipo “humo” al moverse
-  <img src="assets/img/cohete.png" width="250">
+  <div align="center">
+  <img src="assets/img/cohete.png" width="250" alt="Cohete Orión">
+</div>
 - Texto animado en tarjetas
   - Genera una animación progresiva al interactuar con la tarjeta
 - Efecto de chispas en tarjetas 
   - Se implementó una animación al pasar el cursor sobre tarjetas
   - Genera partículas que se dispersan desde el centro
-    <img src="assets/img/texto_animado.png" width="250">
+   <div align="center">
+  <img src="assets/img/texto_animado.png" width="250">
+</div>
 - Modo gravedad cero interactivo
   - Un sistema de animación que simula un entorno sin gravedad en el perfil de cada integrante
   - Se activa mediante el botón "Comenzar viaje"
   - Los elementos (habilidades y tarjetas) flotan libremente por la pantalla
-   <img src="assets/img/modo_gravedad.png" width="250">
+   <div align="center"> 
+  <img src="assets/img/modo_gravedad.png" width="250">
+ </div>
 
 
+## Desafíos técnicos y decisiones
 
-## Personalización rápida
+Durante el desarrollo del proyecto surgieron distintos desafíos que permitieron mejorar la organización del código y la experiencia general del sitio.
 
-- Para cambiar el logo, reemplaza `./assets/img/logo.png` y actualiza el nombre si es necesario.
-- Para agregar más tarjetas a la bitácora, copia una tarjeta existente en `bitacora.html` y cambia el contenido.
-- Para ajustar la animación de scroll, edita los valores en `js/script.js` dentro de `ScrollReveal().reveal(...)`.
+- **Renderizado de animaciones:** se presentaron inconvenientes iniciales con la carga de librerías como ScrollReveal y tsParticles. Se resolvió ajustando el orden de importación de los scripts para asegurar su correcto funcionamiento.
 
-## Problemas comunes
+- **Gestión de rutas:** debido a la estructura de carpetas del proyecto, fue necesario unificar el uso de rutas relativas para evitar errores en la carga de imágenes y recursos.
 
-- Si las animaciones no aparecen, verifica que `ScrollReveal` y `tsParticles` carguen correctamente en el navegador.
-- Si las imágenes no se ven, revisa que las rutas dentro de `assets/img/` estén bien escritas.
+- **Diseño responsive:** uno de los desafíos fue adaptar correctamente el contenido a distintos tamaños de pantalla, ajustando espaciados, alineaciones y comportamiento de las tarjetas para mantener una buena experiencia en dispositivos móviles.
+
+- **Consistencia visual del sitio:** se buscó en mantener una identidad uniforme en todas las secciones (bitácora, perfiles e inicio), respetando la paleta de colores, tipografías y estilos de componentes.
 
 ## Mejoras futuras sugeridas
 
-- Completar las páginas individuales del resto de los integrantes.
+- Completar las páginas individuales.
 - Añadir más interactividad a las tarjetas tipo flip card.
 - Optimizar la carga de imágenes usando formatos modernos (WebP).
 - Crear una versión con dark mode automático.
+- Profundizar la bitácora incorporando aspectos más técnicos del desarrollo y decisiones de implementación.
 
 ## Capturas de Pantalla
-
-(Agregar imágenes del proyecto)
 # Equipo Orión - Proyecto Web
 
  <img src="assets/img/logo.png" width="250">
@@ -255,21 +263,21 @@ La Inteligencia Artificial fue utilizada como herramienta de apoyo tanto en la g
 
 Uso en contenido:
 
-Redacción de textos descriptivos para el README
-Reformulación de explicaciones técnicas para lograr mayor claridad 
-Organización de funcionalidades y documentación del proyecto
+- Redacción de textos descriptivos para el README
+- Reformulación de explicaciones técnicas para lograr mayor claridad
+- Organización de funcionalidades y documentación del proyecto
 
 Uso en código y debugging:
 
 Resolución de errores en CSS, especialmente en diseño responsive (alineación de elementos, posicionamiento de la línea de la bitácora y adaptación a dispositivos móviles)
 Corrección de conflictos visuales y de estilos que afectaban la interfaz (por ejemplo, superposición de elementos y problemas de visibilidad)
 Asistencia en la integración y funcionamiento de JavaScript, incluyendo:
-Eventos (addEventListener)
-Manipulación del DOM
-Animaciones con requestAnimationFrame
-Ayuda en la comprensión y documentación de bloques de código complejos (animaciones, efectos visuales y lógica interactiva), por ejemplo, se trabajó en la integración de librerías como ScrollReveal y tsParticles, donde la IA ayudó a configurar correctamente los parámetros
+- Eventos (addEventListener)
+- Manipulación del DOM
+- Animaciones con requestAnimationFrame
+- Ayuda en la comprensión y documentación de bloques de código complejos (animaciones, efectos visuales y lógica interactiva), por ejemplo, se trabajó en la integración de librerías como ScrollReveal y tsParticles, donde la IA ayudó a configurar correctamente los parámetros
 
-Para la generación de avatares se tomó en cuenta lo siguiente: tomamos una imagen real de cada miembre y solicitamos un fusión para generar un avatar de una tripulación espacial, con traje táctico futurista, estética cyberpunk, con colores neón púrpura, fondo con temática espacial de , alta calidad.
+Para la generación de avatares y la identidad visual, se procesaron retratos de los integrantes mediante IA y solicitamos generar avatares de una tripulación espacial, con traje futurista, estética cyberpunk, con colores neón púrpura, fondo con temática espacial de alta calidad.
 
 ## Enlace al Proyecto Desplegado
 https://tp1orion.vercel.app
