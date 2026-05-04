@@ -19,7 +19,7 @@ El sitio apuesta por una estética inspirada en el espacio, con colores oscuros,
 - **Maira**
 - **Ivana**
 - **Ayelén**
-- **Yahir**
+- **Yahir** ([Link de Github]([URL](https://github.com/yahirperez2899-dotcom)))
 
 ## Tecnologías utilizadas
 
