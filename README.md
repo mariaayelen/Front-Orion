@@ -1,10 +1,18 @@
 # Equipo Orión - Proyecto Web
 
+<img src="assets/img/logo.png" alt="Logo Equipo Orión" width="150" height="150">
+
 ## Descripción
 
 Página web de presentación y bitácora del Equipo Orión, desarrollada como trabajo práctico para la Tecnicatura en Desarrollo de Software.
 
 El sitio apuesta por una estética inspirada en el espacio, con colores oscuros, tipografías modernas y animaciones suaves. Incluye una sección de bienvenida, tarjetas de integrantes y una bitácora que documenta el proceso creativo y técnico.
+
+## Vista Previa
+
+<img src="assets/img/screenshot-home.png" alt="Vista de la página principal" width="600">
+
+<img src="assets/img/screenshot-bitacora.png" alt="Vista de la bitácora" width="600">
 
 ## Objetivos del proyecto
 
@@ -179,7 +187,7 @@ https://fonts.google.com/specimen/Montserrat
   - Se implementó la librería tsParticles
   - Fondo animado con partículas
   - Refuerza la ambientación espacial
-     ![Fondo animado](assets/img/particles.png)
+     ![Fondo animado](assets/img/particulas.png)
 - Efectos visuales
   - Flip cards en integrantes (CSS + interacción)
   - Botones con efecto neón
