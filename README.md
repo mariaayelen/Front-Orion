@@ -35,22 +35,44 @@ El sitio apuesta por una estética inspirada en el espacio, con colores oscuros,
 
 ```
 Front-Orion/
-├── index.html              # Página principal
+├── index.html                # Página principal
 ├── assets/
-│   └── img/                # Imágenes y recursos visuales
+│   └── img/                  # Imágenes y recursos visuales
 ├── css/
-│   └── style.css           # Estilos globales del sitio
+│   └── style.css             # Estilos globales del sitio
 ├── js/
-│   └── script.js           # Comportamiento y animaciones globales
+│   └── script.js             # Comportamiento y animaciones globales
 ├── pages/
-│   ├── bitacora/           # Sección de bitácora del proyecto
-│   │   ├── bitacora.html
-│   │   └── styles.css
-│   └── ivan/               # Ejemplo de página de integrante
-│       ├── page.html
-│       ├── styles.css
-│       └── gravity.js
-└── README.md               # Documentación del proyecto
+│   ├── bitacora/
+│   │   ├── bitacora.html     # Página de bitácora del proyecto
+│   │   └── styles.css        # Estilos específicos de la bitácora
+│   │
+│   ├── ivan/
+│   │   ├── page.html         # Perfil individual de Iván
+│   │   ├── styles.css        # Estilos propios del perfil
+│   │   └── gravity.js        # Efectos dinámicos (partículas / animaciones personalizadas)
+│   │
+│   ├── maira/
+│   │   ├── page.html         # Perfil individual de Maira
+│   │   ├── styles.css        # Estilos propios del perfil
+│   │   └── gravity.js        # Efectos dinámicos (partículas / animaciones personalizadas)
+│   │
+│   ├── ivana/
+│   │   ├── page.html         # Perfil individual de Ivana
+│   │   ├── styles.css        # Estilos propios del perfil
+│   │   └── gravity.js        # Efectos dinámicos (partículas / animaciones personalizadas)
+│   │
+│   ├── ayelen/
+│   │   ├── page.html         # Perfil individual de Ayelén
+│   │   ├── styles.css        # Estilos propios del perfil
+│   │   └── gravity.js        # Efectos dinámicos (partículas / animaciones personalizadas)
+│   │
+│   └── yahir/
+│       ├── page.html         # Perfil individual de Yahir
+│       ├── styles.css        # Estilos propios del perfil
+│       └── gravity.js        # Efectos dinámicos (partículas / animaciones personalizadas)
+│
+└── README.md                 # Documentación del proyecto
 ```
 
 ## Contenido principal
@@ -91,6 +113,49 @@ Front-Orion/
 
 > El proyecto es estático; no necesita servidor. Sin embargo, si querés probarlo con un servidor local, podés usar `Live Server` en VS Code.
 
+## Guía de Estilos
+### Paleta de Colores 
+
+- Fondo principal: #000000
+- Texto principal: #ffffff
+- Color primario (neón): #c77dff
+- Primario claro: #d192ff
+- Primario oscuro: #9d4edd
+- Secundario: #3f1161
+- Acento: #8c77bb
+- Fondo tarjetas: #10092b
+- Hover tarjetas: #1a0f3a
+- Texto secundario: #e1d1ed
+
+## Tipografías
+
+- Títulos:
+https://fonts.google.com/specimen/Michroma
+- Texto general:
+https://fonts.google.com/specimen/Montserrat
+
+## JavaScript
+
+### Funcionalidades implementadas:
+- Menú hamburguesa
+  - Se activa en resoluciones menores a 768px
+  - Permite mostrar/ocultar el menú de navegación
+- ScrollReveal
+ - Aplica animaciones al hacer scroll en:
+    - Sección hero
+    - Tarjetas de integrantes
+    - Bitácora
+- tsParticles
+  - Fondo animado con partículas
+  - Refuerza la ambientación espacial
+- Efectos visuales
+  - Flip cards en integrantes (CSS + interacción)
+  - Botones con efecto neón
+  - Animaciones hover
+- Cursor personalizado (cohete)
+  - Se activa dinámicamente con JavaScript
+  - Genera partículas tipo “humo” al moverse
+
 ## Personalización rápida
 
 - Para cambiar el logo, reemplaza `./assets/img/logo.png` y actualiza el nombre si es necesario.
@@ -108,6 +173,23 @@ Front-Orion/
 - Añadir más interactividad a las tarjetas tipo flip card.
 - Optimizar la carga de imágenes usando formatos modernos (WebP).
 - Crear una versión con dark mode automático.
+
+## Capturas de Pantalla
+
+(Agregar imágenes del proyecto)
+
+- Home
+- Sección equipo
+- Bitácora
+- Perfil individual
+
+## Uso de Inteligencia Artificial
+- Herramientas utilizadas
+  - ChatGPT
+  - Copilot 
+  - Google Geminis
+
+## Enlace al Proyecto Desplegado "Agregar Link"
 
 ## Licencia
 
