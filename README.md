@@ -170,9 +170,9 @@ https://fonts.google.com/specimen/Montserrat
 
 ### Funcionalidades implementadas:
 - Menú hamburguesa
-  - Se implementó un menú hamburguesa para dispositivos móviles
-  - Se activa en resoluciones menores a 768px
-  - Permite mostrar/ocultar el menú de navegación
+ - Se implementó un menú hamburguesa para dispositivos móviles
+ - Se activa en resoluciones menores a 768px
+ - Permite mostrar/ocultar el menú de navegación
    <div align="center">
        <img src="assets/img/menu_hamburguesa.png" width="250">
     </div>
