@@ -219,3 +219,63 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
 });
+
+
+
+const texto = document.getElementById("textoProximo");
+
+const palabras = texto.innerText.split(" ");
+
+texto.innerHTML = "";
+
+palabras.forEach((palabra, index) => {
+  const span = document.createElement("span");
+  span.classList.add("card-subtitle-word");
+
+  span.style.transitionDelay = `${index * 40}ms`;
+
+  span.innerHTML = palabra + "&nbsp;"; // 👈 CLAVE
+
+  texto.appendChild(span);
+});
+
+
+const card = document.querySelector(".card");
+
+card.addEventListener("mouseenter", () => {
+  const rect = card.getBoundingClientRect();
+
+  for (let i = 0; i < 20; i++) {
+    const spark = document.createElement("span");
+    spark.classList.add("card-spark");
+
+    // posición RELATIVA AL BODY (no a la card)
+    const x = rect.left + rect.width / 2;
+    const y = rect.top + rect.height / 2;
+
+    spark.style.left = x + "px";
+    spark.style.top = y + "px";
+
+    document.body.appendChild(spark);
+
+    // dirección aleatoria
+    const angle = Math.random() * 2 * Math.PI;
+    const distance = Math.random() * 120 + 40;
+
+    spark.animate([
+      {
+        transform: "translate(-50%, -50%) scale(1)",
+        opacity: 1
+      },
+      {
+        transform: `translate(calc(-50% + ${Math.cos(angle) * distance}px), calc(-50% + ${Math.sin(angle) * distance}px)) scale(0.5)`,
+        opacity: 0
+      }
+    ], {
+      duration: 700,
+      easing: "ease-out"
+    });
+
+    setTimeout(() => spark.remove(), 700);
+  }
+});

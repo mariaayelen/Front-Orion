@@ -106,26 +106,158 @@
 .hito-texto p {
   line-height: 1.6;
   font-size: 20px;
+  text-align: justify;
+}
+
+
+
+
+
+.bitacora-proximamente {
+  margin-top: 40px;
+  text-align: center;
+  opacity: 0.8;
+}
+
+.texto-animado {
+  font-size: 0.9rem;
+  color: #ccc;
+  display: inline-block;
+}
+
+.texto-animado .word {
+  opacity: 0;
+  display: inline-block;
+  transform: translateY(10px);
+  transition: transform 0.4s ease, opacity 0ms;
+}
+
+/* efecto al aparecer */
+.bitacora-proximamente.activo .word {
+  opacity: 1;
+  transform: translateY(0);
+  transition: transform 0.4s ease, opacity 0ms;
+}
+
+
+
+.card {
+  position: relative;
+  width: 300px;
+  padding: 20px;
+  border-radius: 15px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  margin: 80px auto;
+  cursor: pointer;
+}
+
+/* fondo animado */
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    130deg,
+    transparent 0% 33%,
+    var(--g1) 66%,
+    var(--g2) 83.5%,
+    var(--g3) 100%
+  );
+  background-size: 300% 300%;
+  transition: background-position 0.5s;
+  z-index: 0;
+}
+
+/* movimiento del degradado */
+.card:hover::before {
+  background-position: 100% 100%;
+}
+
+/* contenido arriba */
+.card-content {
+  position: relative;
+  z-index: 1;
+}
+
+/* texto */
+.card-subtitle-word {
+  opacity: 0;
+  display: inline-block;
+  transform: translateY(10px);
+}
+
+/* animación */
+.card:hover .card-subtitle-word {
+  opacity: 1;
+  transform: translateY(0);
+  transition: transform 0.3s ease, opacity 0ms;
+}
+
+/* colores */
+:root {
+  --border: #c77dff;
+
+  --g1: #240046;
+  --g2: #7b2cbf;
+  --g3: #c77dff;
+}
+
+
+.card-header {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  font-family: 'Michroma', sans-serif;
+  font-size: 0.9rem;
+  color: var(--color-ligthblue);
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  opacity: 0.8;
+}
+
+.card-spark {
+  position: fixed; /* 👈 clave para que salga afuera */
+  width: 5px;
+  height: 5px;
+  background: #c77dff;
+  border-radius: 50%;
+  pointer-events: none;
+  box-shadow: 0 0 10px #c77dff, 0 0 20px #c77dff;
+  z-index: 9999;
 }
 
 @media screen and (max-width: 768px) {
 
-  /* Bitacora Mobile */
   .contenedor-bitacora::after {
-    left: 31px;
+    left: 20px; /* más alineado con los números */
+    transform: none;
   }
 
   .hito {
     width: 100%;
-    padding-left: 70px;
-    padding-right: 25px;
+    padding-left: 60px;
+    padding-right: 20px;
   }
 
   .hito-der {
-    left: 0%;
+    left: 0;
   }
 
   .hito-numero {
-    left: 11px !important;
+    left: 0;
+    right: auto;
+    width: 35px;
+    height: 35px;
+    font-size: 12px;
+  }
+
+  .hito-texto p {
+    font-size: 16px; /* 👈 importante para mobile */
+    text-align: justify;
+  }
+
+  .hito-texto h3 {
+    font-size: 18px;
   }
 }
