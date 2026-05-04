@@ -356,9 +356,32 @@ p {
   box-shadow: 0 0 6px #9d4edd;
 }
 
+/* BOTÓN VOLVER */
+.btn-volver-simple {
+    display: inline-flex; 
+    align-items: center;
+    gap: 8px;
+    color: #ccc;
+    font-size: 0.95rem;
+    font-weight: 500;
+    text-decoration: none; 
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
 
+.btn-volver-simple i {
+    font-size: 0.9rem;
+    transition: transform 0.3s ease;
+}
 
+.btn-volver-simple:hover {
+    color: var(--color-ligthblue);
+    text-shadow: 0 0 5px rgba(199, 125, 255, 0.4);
+}
 
+.btn-volver-simple:hover i {
+    transform: translateX(-4px); 
+}
 
 
 
@@ -426,56 +449,114 @@ p {
   text-shadow: 0 0 10px #ffffff;
 }
 
-/* Ajuste para móviles (se pone todo en una columna) */
+/* ---RESPONSIVE DESIGN (Breakpoints Requeridos)--- */
+
+/* Escritorio grande (Máx 1200px) */
+@media screen and (max-width: 1200px) {
+    .seccion-home {
+        padding-top: 100px;
+    }
+    
+    .presentation-card {
+        width: 98%;
+    }
+}
+
+/* Tablets o pantallas medianas (Máx 900px) */
+@media screen and (max-width: 900px) {
+    .presentation-card {
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    .profile-sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid rgba(199, 125, 255, 0.2);
+        padding: 2rem 1.5rem;
+    }
+
+    .profile-details {
+        width: 100%;
+        padding: 2rem 1.5rem;
+    }
+
+    .contenedor-bitacora::after {
+        left: 50%;
+    }
+
+    .hito {
+        width: 90%;
+        margin: 0 auto;
+        padding-left: 20px;
+        padding-right: 20px;
+        left: 0;
+    }
+
+    .hito-der {
+        left: 0%;
+    }
+
+    .hito-numero {
+        left: 10px !important;
+    }
+}
+
+/* Dispositivos móviles (Máx 768px - estándar para Navbar) */
 @media screen and (max-width: 768px) {
+    .navbar {
+        padding: 15px 20px;
+        width: 90%;
+        top: 15px;
+    }
 
-  /* Navbar Mobile */
-  .navbar {
-    padding: 15px 20px;
-    width: 90%;
-    top: 15px;
-  }
+    .hamburger {
+        display: block;
+    }
 
-  .hamburger {
-    display: block;
-  }
+    .nav-links {
+        display: none;
+    }
 
-  .nav-links {
-    position: fixed;
-    top: 0;
-    right: -100%;
-    background: rgba(16, 9, 43, 0.95);
-    backdrop-filter: blur(10px);
-    width: 250px;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: right 0.4s ease;
-    border-left: 1px solid rgba(199, 125, 255, 0.2);
-    z-index: 999;
-  }
+    .nav-links.active {
+        display: flex;
+        position: absolute;
+        top: 65px; 
+        left: 0;
+        width: 100%;
+        background: rgba(16, 9, 43, 0.95);
+        backdrop-filter: blur(15px);
+        border: 1px solid rgba(199, 125, 255, 0.2);
+        border-radius: 20px;
+        padding: 20px 0;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    }
 
-  .nav-links.active {
-    right: 0;
-  }
+    .nav-links.active ul {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 20px;
+    }
+}
 
-  .nav-links ul {
-    flex-direction: column;
-    margin-top: 100px;
-    gap: 40px;
-    text-align: center;
-  }
+/* Móviles pequeños (Máx 400px)*/
+@media screen and (max-width: 400px) {
+    /* Ajustes finos para pantallas muy chicas */
+    .profile-avatar-container {
+        width: 140px;
+        height: 140px;
+    }
 
-  /* Ajustes Hero y General */
-  .titulo {
-    font-size: 32px;
-  }
+    .profile-name {
+        font-size: 1.4rem;
+    }
 
-  .hero p {
-    font-size: 14px;
-    padding: 0 15px;
-  }
-
-
+    .detail-section h2 {
+        font-size: 1.1rem;
+    }
+    
+    .navbar {
+        width: 95%; 
+    }
 }
