@@ -271,7 +271,8 @@ Ayuda en la comprensión y documentación de bloques de código complejos (anima
 
 Para la generación de avatares se tomó en cuenta lo siguiente: tomamos una imagen real de cada miembre y solicitamos un fusión para generar un avatar de una tripulación espacial, con traje táctico futurista, estética cyberpunk, con colores neón púrpura, fondo con temática espacial de , alta calidad.
 
-## Enlace al Proyecto Desplegado "Agregar Link"
+## Enlace al Proyecto Desplegado
+https://tp1orion.vercel.app
 
 ## Licencia
 
