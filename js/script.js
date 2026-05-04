@@ -30,6 +30,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 600);
   }
 
+
+  // Seguir el mouse solo si el modo cohete está activo y no está volando
   document.addEventListener("mousemove", (e) => {
     if (!isRocketActive || isFlying) return;
     cursor.style.display = "block";
@@ -137,17 +139,16 @@ document.addEventListener("DOMContentLoaded", () => {
         // Crear estela mientras sale volando
         const flyInterval = setInterval(() => {
           const rect = cursor.getBoundingClientRect();
-          // Spawn particle at the center of the rocket
           createSmokeParticle(rect.left + rect.width / 2, rect.top + rect.height / 2);
         }, 40);
 
         // Ocultar definitivamente después de volar
         setTimeout(() => {
           clearInterval(flyInterval);
-          cursor.style.transition = 'transform 0.2s ease, color 0.2s ease, text-shadow 0.2s ease'; // Restaurar transitions
+          cursor.style.transition = 'transform 0.2s ease, color 0.2s ease, text-shadow 0.2s ease'; /
           cursor.style.display = "none";
           isFlying = false;
-          currentAngle = -45; // Resetear ángulo
+          currentAngle = -45; 
         }, 1200);
       }
     });
@@ -222,6 +223,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+
+// 6.Texto animado en la tarjeta (Solo en Bitácora)
+
 const texto = document.getElementById("textoProximo");
 
 const palabras = texto.innerText.split(" ");
@@ -234,11 +238,15 @@ palabras.forEach((palabra, index) => {
 
   span.style.transitionDelay = `${index * 40}ms`;
 
-  span.innerHTML = palabra + "&nbsp;"; // 👈 CLAVE
+  span.innerHTML = palabra + "&nbsp;";
 
   texto.appendChild(span);
 });
 
+
+
+
+// 7. Efecto de chispas al pasar el mouse sobre la tarjeta (Solo en Bitácora)
 
 const card = document.querySelector(".card");
 
@@ -249,7 +257,6 @@ card.addEventListener("mouseenter", () => {
     const spark = document.createElement("span");
     spark.classList.add("card-spark");
 
-    // posición RELATIVA AL BODY (no a la card)
     const x = rect.left + rect.width / 2;
     const y = rect.top + rect.height / 2;
 
@@ -258,7 +265,7 @@ card.addEventListener("mouseenter", () => {
 
     document.body.appendChild(spark);
 
-    // dirección aleatoria
+
     const angle = Math.random() * 2 * Math.PI;
     const distance = Math.random() * 120 + 40;
 
