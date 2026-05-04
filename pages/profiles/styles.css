@@ -145,6 +145,12 @@ body.rocket-active .seccion-home {
     border-right: 1px solid rgba(199, 125, 255, 0.2);
 }
 
+.profile-sidebar .btn-volver-simple {
+    align-self: flex-start; 
+    margin-top: auto;  
+    padding-top: 30px; 
+}
+
 .profile-avatar-container {
     width: 180px;
     height: 180px;
@@ -370,61 +376,7 @@ body.rocket-active .seccion-home {
     }
 }
 
-/* NAVBAR */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 40px;
-    background: rgba(16, 9, 43, 0.6);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(199, 125, 255, 0.2);
-    border-radius: 50px;
-    position: fixed;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 90%;
-    max-width: 1000px;
-    z-index: 1000;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
-}
 
-.navbar .logo {
-    font-family: 'Michroma', sans-serif;
-    font-size: 24px;
-    color: var(--color-ligthblue);
-    text-shadow: 0 0 5px var(--color-ligthblue);
-}
-
-.nav-links ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    gap: 30px;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: snow;
-    font-size: 16px;
-    font-weight: 500;
-    transition: color 0.3s ease, text-shadow 0.3s ease;
-}
-
-.nav-links a:hover {
-    color: #fff;
-    text-shadow: 0 0 8px var(--color-ligthblue);
-}
-
-.hamburger {
-    display: none;
-    cursor: pointer;
-    font-size: 24px;
-    color: var(--color-ligthblue);
-}
 
 /* FOOTER */
 .footer {
@@ -472,22 +424,6 @@ body.rocket-active .seccion-home {
     text-shadow: 0 0 10px #ffffff;
 }
 
-@media screen and (max-width: 768px) {
-    .navbar {
-        padding: 15px 20px;
-        width: 90%;
-        top: 15px;
-    }
-
-    .hamburger {
-        display: block;
-    }
-
-    .nav-links {
-        display: none;
-    }
-}
-
 /* evita scroll en animacion activada*/
 body.rocket-active {
     overflow: hidden !important;
@@ -530,4 +466,68 @@ body.rocket-active {
 
 .returning {
     transition: all 0.8s cubic-bezier(0.5, 0, 0.2, 1) !important;
+}
+
+/* ---RESPONSIVE DESIGN (Breakpoints Requeridos)--- */
+
+/* --- Pantallas de escritorio grandes (1200px) --- */
+@media screen and (max-width: 1200px) {
+    .presentation-card {
+        width: 98%; 
+    }
+    .profile-sidebar {
+        padding: 2rem 1.5rem;
+    }
+    .profile-details {
+        padding: 2rem;
+    }
+}
+
+/* --- Tablets o pantallas medianas (900px) --- */
+@media screen and (max-width: 900px) {
+    .seccion-home {
+        height: auto;
+        min-height: 100vh;
+        padding-top: 150px;
+        padding-bottom: 50px;
+    }
+    /* Pasa el diseño a una sola columna */
+    .presentation-card {
+        flex-direction: column;
+        margin-top: 0;
+    }
+    .profile-sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid rgba(199, 125, 255, 0.2);
+        padding: 2rem 1.5rem;
+    }
+    .profile-details {
+        width: 100%;
+        padding: 2rem 1.5rem;
+    }
+}
+
+/* --- Dispositivos móviles pequeños (400px) --- */
+@media screen and (max-width: 400px) {
+    .profile-avatar-container {
+        width: 130px;
+        height: 130px;
+    }
+    .profile-name {
+        font-size: 1.5rem;
+    }
+    .profile-role {
+        font-size: 0.85rem;
+    }
+    .detail-section h2 {
+        font-size: 1.1rem;
+    }
+    .info-item {
+        font-size: 0.9rem;
+    }
+    .btn-neon-viaje {
+        font-size: 12px;
+        padding: 10px 15px;
+    }
 }
