@@ -167,52 +167,60 @@ https://fonts.google.com/specimen/Michroma
 https://fonts.google.com/specimen/Montserrat
 
 ## JavaScript
-
+En esta sección se detalla algunos aspectos desarrollados para lograr la interactividad y la ambientación del sitio. Se trabajó con manipulación del DOM, eventos de usuario y la integración de librerías externas para los efectos visuales.
 ### Funcionalidades implementadas:
-- Menú hamburguesa
- - Se implementó un menú hamburguesa para dispositivos móviles
- - Se activa en resoluciones menores a 768px
- - Permite mostrar/ocultar el menú de navegación
-   <div align="center">
-       <img src="assets/img/menu_hamburguesa.png" width="250">
-    </div>
-- ScrollReveal
- - Se utilizó la librería ScrollReveal para animar elementos al hacer scroll
- - Se aplica a los elementos con la clase .revelable
- - Utilizado en Bitácora
-- tsParticles
-  - Se implementó la librería tsParticles
-  - Fondo animado con partículas
-  - Refuerza la ambientación espacial
-   <div align="center">
+
+#### Menú hamburguesa
+- Se implementó un menú hamburguesa para dispositivos móviles.
+- Se activa en resoluciones menores a 768px.
+- Permite mostrar/ocultar el menú de navegación.
+<p align="center">
+  <img src="assets/img/menu_hamburguesa.png" width="250">
+</p>
+
+#### ScrollReveal
+- Se utilizó la librería ScrollReveal para animar elementos al hacer scroll.
+- Se aplica a los elementos con la clase .revelable.
+- Utilizado en Bitácora.
+
+#### tsParticles
+- Se implementó la librería tsParticles.
+- Fondo animado con partículas.
+- Refuerza la ambientación espacial.
+<p align="center">
   <img src="assets/img/particulas.png" width="250">
-</div>
-- Efectos visuales
-  - Flip cards en integrantes (CSS + interacción)
-  - Botones con efecto neón
-  - Animaciones hover
-- Cursor personalizado (cohete)
-  - Se activa dinámicamente con JavaScript
-  - Sigue el movimiento del mouse con animación fluida 
-  - Genera partículas tipo “humo” al moverse
-  <div align="center">
+</p>
+
+#### Efectos visuales
+- Flip cards en integrantes (CSS + interacción).
+- Botones con efecto neón.
+- Animaciones hover.
+
+#### Cursor personalizado (cohete)
+- Se activa dinámicamente con JavaScript.
+- Sigue el movimiento del mouse con animación fluida.
+- Genera partículas tipo “humo” al moverse.
+<p align="center">
   <img src="assets/img/cohete.png" width="250" alt="Cohete Orión">
-</div>
-- Texto animado en tarjetas
-  - Genera una animación progresiva al interactuar con la tarjeta
-- Efecto de chispas en tarjetas 
-  - Se implementó una animación al pasar el cursor sobre tarjetas
-  - Genera partículas que se dispersan desde el centro
-   <div align="center">
+</p>
+
+#### Texto animado en tarjetas
+- Genera una animación progresiva al interactuar con la tarjeta.
+
+#### Efecto de chispas en tarjetas
+- Se implementó una animación al pasar el cursor sobre tarjetas.
+- Genera partículas que se dispersan desde el centro.
+<p align="center">
   <img src="assets/img/texto_animado.png" width="250">
-</div>
-- Modo gravedad cero interactivo
-  - Un sistema de animación que simula un entorno sin gravedad en el perfil de cada integrante
-  - Se activa mediante el botón "Comenzar viaje"
-  - Los elementos (habilidades y tarjetas) flotan libremente por la pantalla
-   <div align="center"> 
+</p>
+
+#### Modo gravedad cero interactivo
+- Un sistema de animación que simula un entorno sin gravedad en el perfil de cada integrante.
+- Se activa mediante el botón "Comenzar viaje".
+- Los elementos (habilidades y tarjetas) flotan libremente por la pantalla.
+<p align="center">
   <img src="assets/img/modo_gravedad.png" width="250">
- </div>
+</p>
 
 
 ## Desafíos técnicos y decisiones
