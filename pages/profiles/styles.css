@@ -424,7 +424,6 @@ body.rocket-active .seccion-home {
     text-shadow: 0 0 10px #ffffff;
 }
 
-/* evita scroll en animacion activada*/
 body.rocket-active {
     overflow: hidden !important;
 }
@@ -491,7 +490,6 @@ body.rocket-active {
         padding-top: 150px;
         padding-bottom: 50px;
     }
-    /* Pasa el diseño a una sola columna */
     .presentation-card {
         flex-direction: column;
         margin-top: 0;
@@ -505,6 +503,22 @@ body.rocket-active {
     .profile-details {
         width: 100%;
         padding: 2rem 1.5rem;
+    }
+}
+
+
+
+/* --- Dispositivos móviles pequeños (700px) --- */
+@media (max-width: 700px) {
+    .movies-mini-grid {
+        flex-wrap: wrap;
+        justify-content: center;
+        overflow-x: hidden;
+    }
+
+    .movie-mini-card {
+        flex: 1 1 45%;
+        max-width: 45%;
     }
 }
 

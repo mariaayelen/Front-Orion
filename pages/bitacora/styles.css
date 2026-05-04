@@ -83,7 +83,7 @@
   box-shadow: 0 0 10px var(--color-primary);
 }
 
-/* Posición Derecha */
+
 .hito-der {
   left: 50%;
 }
@@ -92,7 +92,7 @@
   left: -20px;
 }
 
-/* Posición Izquierda */
+
 .hito-izq {
   left: 0;
 }
@@ -101,7 +101,7 @@
 .hito-contenido {
   padding: 20px 30px;
   background-color: rgba(16, 9, 43, 0.8);
-  /* Mantenemos el RGBA para la transparencia, que equivale a --color-card-dark */
+ 
   position: relative;
   border-radius: 15px;
   border: 1px solid var(--color-secondary);
@@ -152,7 +152,7 @@
   transition: transform 0.4s ease, opacity 0ms;
 }
 
-/* efecto al aparecer */
+
 .bitacora-proximamente.activo .word {
   opacity: 1;
   transform: translateY(0);
@@ -172,7 +172,7 @@
   cursor: pointer;
 }
 
-/* fondo animado */
+
 .card::before {
   content: "";
   position: absolute;
@@ -189,32 +189,32 @@
   z-index: 0;
 }
 
-/* movimiento del degradado */
+
 .card:hover::before {
   background-position: 100% 100%;
 }
 
-/* contenido arriba */
+
 .card-content {
   position: relative;
   z-index: 1;
 }
 
-/* texto */
+
 .card-subtitle-word {
   opacity: 0;
   display: inline-block;
   transform: translateY(10px);
 }
 
-/* animación */
+
 .card:hover .card-subtitle-word {
   opacity: 1;
   transform: translateY(0);
   transition: transform 0.3s ease, opacity 0ms;
 }
 
-/* colores */
+
 :root {
   --border: #c77dff;
   --g1: #240046;
@@ -240,7 +240,7 @@
 }
 
 .card-spark {
-  position: fixed; /* 👈 clave para que salga afuera */
+  position: fixed; 
   width: 5px;
   height: 5px;
   background: #c77dff;
@@ -250,9 +250,10 @@
   z-index: 9999;
 }
 
+
+
 /* RESPONSIVE DESIGN (Breakpoints Obligatorios) */
 
- 
 
 /* --- Pantallas de escritorio grandes (1200px) --- */
 @media screen and (max-width: 1200px) {
@@ -263,7 +264,7 @@
 
 /* --- Tablets o pantallas medianas (900px) --- */
 @media screen and (max-width: 900px) {
-    /* Línea pegada al costado de los números */
+  
     .contenedor-bitacora::after {
         left: 20px;
     }

@@ -8,12 +8,6 @@ Página web de presentación y bitácora del Equipo Orión, desarrollada como tr
 
 El sitio apuesta por una estética inspirada en el espacio, con colores oscuros, tipografías modernas y animaciones suaves. Incluye una sección de bienvenida, tarjetas de integrantes y una bitácora que documenta el proceso creativo y técnico.
 
-## Vista Previa
-
-<img src="assets/img/screenshot-home.png" alt="Vista de la página principal" width="600">
-
-<img src="assets/img/screenshot-bitacora.png" alt="Vista de la bitácora" width="600">
-
 ## Objetivos del proyecto
 
 - Mostrar la identidad del equipo.
@@ -23,9 +17,9 @@ El sitio apuesta por una estética inspirada en el espacio, con colores oscuros,
 
 ## Integrantes del Equipo
 
-- **Iván** ([Github](https://github.com/IvanaZandona))
+- **Iván** ([Github](https://github.com/Ivanveliz))
 - **Maira** ([Github](https://github.com/mairammedina29))
-- **Ivana** ([Github](https://github.com/Ivanveliz))
+- **Ivana** ([Github](https://github.com/IvanaZandona))
 - **Ayelén** ([Github](https://github.com/mariaayelen))
 - **Yahir** ([Github](https://github.com/yahirperez2899-dotcom))
 
@@ -178,7 +172,7 @@ https://fonts.google.com/specimen/Montserrat
   - Se implementó un menú hamburguesa para dispositivos móviles
   - Se activa en resoluciones menores a 768px
   - Permite mostrar/ocultar el menú de navegación
-   ![Menú hamburguesa](assets/img/menu_hamburguesa.png)
+   <img src="assets/img/menu_hamburguesa.png" width="250">
 - ScrollReveal
  - Se utilizó la librería ScrollReveal para animar elementos al hacer scroll
  - Se aplica a los elementos con la clase .revelable
@@ -187,7 +181,7 @@ https://fonts.google.com/specimen/Montserrat
   - Se implementó la librería tsParticles
   - Fondo animado con partículas
   - Refuerza la ambientación espacial
-     ![Fondo animado](assets/img/particulas.png)
+     <img src="assets/img/particulas.png" width="250">
 - Efectos visuales
   - Flip cards en integrantes (CSS + interacción)
   - Botones con efecto neón
@@ -196,18 +190,18 @@ https://fonts.google.com/specimen/Montserrat
   - Se activa dinámicamente con JavaScript
   - Sigue el movimiento del mouse con animación fluida 
   - Genera partículas tipo “humo” al moverse
-  ![Cursor personalizado](assets/img/cohete.png)
+  <img src="assets/img/cohete.png" width="250">
 - Texto animado en tarjetas
   - Genera una animación progresiva al interactuar con la tarjeta
 - Efecto de chispas en tarjetas 
   - Se implementó una animación al pasar el cursor sobre tarjetas
   - Genera partículas que se dispersan desde el centro
-    ![Texto animado](assets/img/texto_animado.png)
+    <img src="assets/img/texto_animado.png" width="250">
 - Modo gravedad cero interactivo
   - Un sistema de animación que simula un entorno sin gravedad en el perfil de cada integrante
   - Se activa mediante el botón "Comenzar viaje"
   - Los elementos (habilidades y tarjetas) flotan libremente por la pantalla
-   ![Texto animado](assets/img/modo_gravedad.png)
+   <img src="assets/img/modo_gravedad.png" width="250">
 
 
 
@@ -234,19 +228,19 @@ https://fonts.google.com/specimen/Montserrat
 (Agregar imágenes del proyecto)
 # Equipo Orión - Proyecto Web
 
-![Logo Orión](assets/img/logo.png)
+ <img src="assets/img/logo.png" width="250">
 
 ## Vista de la página principal
 
-![Página principal](assets/img/home.png)
+<img src="assets/img/home.png" width="250">
 
 ## Sección de integrantes
 
-![Integrantes](assets/img/integrantes.png)
+<img src="assets/img/integrantes.png" width="250">
 
 ## Bitácora
 
-![Bitácora](assets/img/screen_bitacora.png)
+ <img src="assets/img/screen_bitacora.png" width="250">
 
 
 Muchos elementos como animaciones principalmente y partes del código están basados en trabajos previos propios y en recursos consultados (como tutoriales de YouTube y ejemplos en línea). Estos fueron adaptados y modificados para integrarlos al proyecto según nuestra estética y necesidades.
