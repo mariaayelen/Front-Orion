@@ -36,6 +36,24 @@
   margin-left: -1px;
 }
 
+.contenedor-bitacora .btn-volver-simple {
+    display: flex;             
+    width: max-content;        
+    margin: 50px auto 0 auto; 
+    position: relative;        
+    z-index: 10;              
+    background: rgba(16, 9, 43, 0.8); 
+    padding: 10px 20px;     
+    border-radius: 20px;   
+    border: 1px solid rgba(199, 125, 255, 0.3);
+}
+
+/* Efecto hover específico para la bitácora */
+.contenedor-bitacora .btn-volver-simple:hover {
+    border-color: var(--color-ligthblue);
+    background: rgba(16, 9, 43, 1);
+}
+
 .hito {
   padding: 10px 40px;
   position: relative;
